@@ -13,7 +13,8 @@ function Add(){
     row += "<td>" + qty + "</td>";
     row += "<td>$" + price+ "</td>";
     row += "<td>$" +sum+ "</td>";
-    row +="</tr>";
+    row +="</tr>";   
+    
     document.getElementById('bang').innerHTML +=row;
-    document.getElementById('total').innerHTML= "$"+total;
+    document.getElementById('total').innerHTML= "$"+total;   
 }
