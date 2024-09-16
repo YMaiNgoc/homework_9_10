@@ -5,29 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="baitap3.css">
 </head>
 
 <body>
     <div class="container">
         <h1 class="header">Clothers</h1>
         <form action="" id="frm">
-            <p><label>
-                     Product Name:
-                    <input type="text" id="pname" name="pname">
+
+            <p><label>Product Name
+                    <input type="text" id="pname" name="pname" >
                 </label>
             </p>
-            <p><label for=" ">
-                    Product Quantity:
-                    <input type="text" id="qty" name="qty">
+            <p><label for=" ">Product Quantity
+                    <input type="text" id="qty" name="qty" >
                 </label>
             </p>
-            <p><label>
-                    Product Price:
+            <p><label>Product Price
                     <input type="text" id="up" name="up">
                 </label>
             </p>
             <div id="button">
-                <button type="button" onclick="Add()">Add</button>
+                <button type="button" style="background-color: #231f3a; color: white;" onclick="Add()">Add</button>
             </div>
         </form>
         <table id="table">
@@ -38,8 +37,15 @@
                 <th>Price</th>
                 <th>Sub-total</th>
             </tr>
+            <tfoot id="">
+                <tr>
+                    <td colspan="4" style="text-align:left ;"><b>Total:</b></td>
+                    <td id="total">$0</td>
+                </tr>
+            </tfoot>
         </table>
     </div>
+    <script src="baitap3.js"> </script>
 </body>
 
 </html>
